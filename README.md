@@ -26,7 +26,7 @@ The project focuses on **Promises, async/await, API integration, and dynamic CSS
   - Flexbox Layouts
   - Glassmorphism (`backdrop-filter`, `rgba`)
   - Linear Gradients & Transitions
-- **Vanilla JavaScript (ES6+)**
+- **JavaScript (ES6+)**
   - Asynchronous functions (`async / await`)
   - DOM Manipulation
   - Event Listeners & State Management
