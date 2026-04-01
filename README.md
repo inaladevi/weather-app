@@ -1,6 +1,6 @@
 # 🌤️ Weather App
 
-A dynamic weather forecast application built using **Vanilla JavaScript, HTML, and CSS**.  
+A dynamic weather forecast application built using **JavaScript, HTML, and CSS**.  
 The application interacts with an external API to handle asynchronous data fetching, error handling, and dynamic DOM manipulation to display real-time weather conditions.
 
 The project focuses on **Promises, async/await, API integration, and dynamic CSS styling**.
