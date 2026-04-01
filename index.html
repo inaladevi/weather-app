@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="main-container">
+        <form id="weather-form">
+            <input type="text" id="city-input" placeholder="Search city..." required>
+            <button type="submit">🔍</button>
+        </form>
+
+        <div id="weather-result-container" class="hidden">
+            <div class="weather-info">
+                <h2 id="display-city"></h2>
+                <h3 class="short-condition"><span id="display-time"></span> • <span id="display-conditions"></span></h3>
+                <p id="display-description" class="weather-summary"></p> 
+                
+                <div class="weather-data-split">
+                    <div class="temp-column">
+                        <span id="display-temp" class="massive-temp"></span>
+                        <div class="temp-units">
+                            <span id="btn-celsius">°C</span> | <span id="btn-fahrenheit">°F</span>
+                        </div>
+                    </div>
+                
+                    <div class="details-column">
+                        <p><strong>WIND:</strong> <span id="display-wind"></span> MPH</p>
+                        <p><strong>HUMIDITY:</strong> <span id="display-humidity"></span>%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p id="error-message" class="hidden">⚠️ City not found. Please try again!</p>
+        <p id="loading-message" class="hidden">Searching for weather...</p>
+    </div>
+    
+    <script src="app.js" defer></script>
+</body>
+</html>
