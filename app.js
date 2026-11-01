@@ -1,4 +1,4 @@
-const apiKey = "BJCFTG8VP3EUJWCY4LS5T6HQP";
+const apiKey = "Z7X4DW9SUB5NHBJSBY2ZKH6D2";
 
 let currentWeatherData;
 
