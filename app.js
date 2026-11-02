@@ -4,8 +4,7 @@ let currentWeatherData;
 
 async function getWeather(city) {
     try {
-        const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=${apiKey}`);
-        if (!response.ok) throw new Error('Network response was not ok');
+        const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${encodeURIComponent(city.trim())}?key=${apiKey}`);        if (!response.ok) throw new Error('Network response was not ok');
         const weatherData = await response.json();
         const cleanData = processData(weatherData);
         return cleanData;
